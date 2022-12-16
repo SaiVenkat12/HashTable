@@ -9,16 +9,16 @@ namespace HashTables
         {
             Console.WriteLine("Hash Table");
 
-            //MyMapNode<int, string> hash = new MyMapNode<int, string>(5);
-            //hash.Add(0, "To");
-            //hash.Add(1, "be");
-            //hash.Add(2, "or");
-            //hash.Add(3, "not");
-            //hash.Add(4, "to");
-            //hash.Add(5, "be");
+            //MyMapNode<int, string> hasht = new MyMapNode<int, string>(5);
+            //hasht.Add(0, "To");
+            //hasht.Add(1, "be");
+            //hasht.Add(2, "or");
+            //hasht.Add(3, "not");
+            //hasht.Add(4, "to");
+            //hasht.Add(5, "be");
 
-            //string hash5 = hash.Get(5);
-            //Console.WriteLine("5th index value: " + hash5);
+            //string hasht5 = hasht.Get(5);
+            //Console.WriteLine("5th index value: " + hasht5);
 
             //hash.Remove(3);
             //string hash3 = hash.Get(3);
@@ -49,6 +49,11 @@ namespace HashTables
             Console.WriteLine("12th index value: " + hash12);
             string hash16 = hash.Get("16");
             Console.WriteLine("16th index value: " + hash16);
+
+            hash.Remove("17");
+            string hash17 = hash.Get("17");
+            Console.WriteLine("17th index value: " + hash17);
+            Console.WriteLine("Avoidable is removed from the hash");
         }
     }
 }
